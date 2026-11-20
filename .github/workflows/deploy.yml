@@ -34,8 +34,8 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
-          NUXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          NUXT_PUBLIC_SUPABASE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          NUXT_PUBLIC_SUPABASE_URL: https://ntvdnqxmxhvaqevwrgts.supabase.co
+          NUXT_PUBLIC_SUPABASE_KEY: sb_publishable_UUFFHiXIq4L04dwTQJmctA_QAEQTxSV
           NUXT_PUBLIC_WHATSAPP_NUMBER: '59176590871'
           NUXT_PUBLIC_ADMIN_PASSWORD: 'fabellas-admin'
         run: npm run generate
