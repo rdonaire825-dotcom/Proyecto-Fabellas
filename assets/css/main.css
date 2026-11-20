@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --fabellas-rose-50: #fff7fb;
+  --fabellas-rose-100: #fdeaf4;
+  --fabellas-rose-200: #f9d7e5;
+  --fabellas-pink: #d85f8f;
+  --fabellas-pink-deep: #bb3d71;
+  --fabellas-gold: #d8b36a;
+  --fabellas-brown: #5a3c45;
+  --fabellas-cream: #fffaf5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased;
+  background: linear-gradient(180deg, #fff9fb 0%, #fdf2f7 28%, #f9f2ee 100%);
+  color: var(--fabellas-brown);
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .brand-pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-pink-200 bg-white/80 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-pink-700 shadow-sm;
+  }
+}
