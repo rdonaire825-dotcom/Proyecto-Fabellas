@@ -14,8 +14,13 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: '2026-10-30',
-  css: ['~/assets/css/main.css'],
+  ssr: false,
+  nitro: {
+    preset: 'github_pages',
+  },
   app: {
+    baseURL: '/Proyecto-Fabellas/',
+    buildAssetsDir: '/_nuxt/',
     head: {
       title: 'Catálogo Isa | Cosméticos',
       meta: [
